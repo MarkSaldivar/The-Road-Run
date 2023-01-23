@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="807.0" fitWidth="807.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mainMenuImages/The%20Road%20Run%20Main%20Menu.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="188.0" layoutY="75.0" prefHeight="141.0" prefWidth="432.0" text="The Road Run">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="61.0" />
+         </font>
+      </Label>
+      <Button fx:id="scoreboardButton" layoutX="59.0" layoutY="437.0" mnemonicParsing="false" onAction="#scoreboardHandle" prefHeight="33.0" prefWidth="167.0" text="Scoreboard" />
+      <Button fx:id="playButton" layoutX="59.0" layoutY="371.0" mnemonicParsing="false" onAction="#playHandle" prefHeight="33.0" prefWidth="167.0" text="Play" />
+      <Button fx:id="quitButton" layoutX="59.0" layoutY="503.0" mnemonicParsing="false" onAction="#handle" prefHeight="33.0" prefWidth="167.0" text="Quit" />
+   </children>
+</AnchorPane>

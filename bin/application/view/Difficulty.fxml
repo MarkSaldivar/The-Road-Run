@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.DifficultyController">
+   <children>
+      <ImageView id="backgroundImage" fx:id="backgroundImage" fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" />
+      <Button fx:id="EasyButton" layoutX="92.0" layoutY="207.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="121.0" text="Easy" />
+      <Button fx:id="MediumButton" layoutX="334.0" layoutY="207.0" mnemonicParsing="false" onAction="#handle2" prefHeight="25.0" prefWidth="121.0" text="Medium" />
+      <Button fx:id="HardButton" layoutX="576.0" layoutY="207.0" mnemonicParsing="false" onAction="#handle3" prefHeight="25.0" prefWidth="121.0" text="Hard" />
+      <Label layoutX="247.0" layoutY="43.0" prefHeight="70.0" prefWidth="295.0" text="Choose Your Difficulty!">
+         <font>
+            <Font name="Comic Sans MS Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

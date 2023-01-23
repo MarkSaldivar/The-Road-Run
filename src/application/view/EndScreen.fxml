@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EndScreenController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/EndScreens/CongratsView.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="endScreenMessage" layoutX="132.0" layoutY="-19.0" prefHeight="137.0" prefWidth="537.0" text="Congratulations! You've made it to class on time!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="76.0" prefHeight="85.0" prefWidth="214.0" text="Points Scored:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerScore" layoutX="468.0" layoutY="76.0" prefHeight="85.0" prefWidth="77.0" text="10" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="507.0" layoutY="557.0" prefHeight="49.0" prefWidth="193.0" promptText="Enter Username" />
+      <Button fx:id="submitToScoreboardButton" layoutX="507.0" layoutY="606.0" mnemonicParsing="false" onAction="#handle" text="Submit to Scoreboard" />
+      <Button fx:id="retryButton" layoutX="507.0" layoutY="705.0" mnemonicParsing="false" onAction="#retry" prefHeight="25.0" prefWidth="133.0" text="Retry" />
+      <Button fx:id="returnToMenuButton" layoutX="507.0" layoutY="755.0" mnemonicParsing="false" onAction="#quit" prefHeight="25.0" prefWidth="133.0" text="Return to Menu" />
+      <Label fx:id="scoreSubmittedLabel" layoutX="507.0" layoutY="639.0" prefHeight="60.0" prefWidth="187.0" textAlignment="CENTER" textFill="#001aff" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
